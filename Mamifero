@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Mamifero extends Animal{
+	public Mamifero() {		
+	   super();
+	   System.out.printf ("Digite a quantidade de filhos");
+	   ler = new Scanner(System.in);
+		this.quantidade_de_filhos = ler.nextInt();
+	}
+	
+	
+	
+	
+	int quantidade_de_filhos ;
+	public int getQuantidade_de_filhos() {
+		return this.quantidade_de_filhos;
+	}
+	public void setQuantidade_de_filhos(int quantidade_de_filhos) {
+		this.quantidade_de_filhos = quantidade_de_filhos;
+	}
+ }

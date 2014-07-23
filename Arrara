@@ -1,0 +1,9 @@
+class Ararra extends Aves{
+	 public Ararra(){
+		 super();
+		 System.out.printf ("ele emite esse som");
+			this.som = " Arara arara  ";
+			this.origem = "Brasil" ;
+			this.especie = "Ararra";
+	 }
+}

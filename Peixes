@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Peixes extends Animal {
+	public Peixes() {
+		super();
+		System.out.printf ("Digite tipo de agua onde ele vive");
+		ler = new Scanner(System.in);
+		this.tipo_de_agua = ler.next();
+		this.som = "      ";
+		System.out.printf ("ele emite esse som");
+		
+	    }
+	String tipo_de_agua ;
+	public String getTipo_de_agua() {
+		return tipo_de_agua;
+	}
+	public void setTipo_de_agua(String tipo_de_agua) {
+		this.tipo_de_agua = tipo_de_agua;
+	}
+ 
+ }

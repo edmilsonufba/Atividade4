@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Pastor extends Cachorro{
+	 public Pastor() {
+		super();
+		System.out.printf ("Digite a cor do pelo");
+		ler = new Scanner(System.in);
+		this.cordopelo = ler.next();
+		this.especie = "Pastor Alemão";
+		
+	}
+	String cordopelo;
+	public String getCordopelo() {
+		return cordopelo;
+	}
+	public void setCordopelo(String cordopelo) {
+		this.cordopelo = cordopelo;
+	}
+	 
+}

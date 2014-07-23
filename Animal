@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+ abstract class Animal {
+	 
+	String som ; 
+	public String getSom() {
+		return som;
+	}
+	public void setSom(String som) {
+		this.som = som;
+	}
+
+
+	String origem ;
+	String especie ;
+	protected Scanner ler;
+	//metodos de animal---------------------
+	public String getOrigem() {
+		return origem;
+	}
+	public void setOrigem(String origem) {
+		this.origem = origem;
+	}
+	public String getEspecie() {
+		return this.especie;
+	}
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+
+
+	//construtor da classe pai
+	public Animal() {
+		ler = new Scanner(System.in);
+		//Scanner ler = new Scanner(System.in);
+		System.out.printf ("Digite a Origem do animal");
+		this.origem = ler.next();
+		System.out.printf ("Digite a especie do animal");
+		this.especie = ler.next();
+		this.som = "som";
+	    }
+	 
+}

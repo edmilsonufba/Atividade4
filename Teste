@@ -1,0 +1,103 @@
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Random;
+
+
+
+public class Testes {
+
+private static List<Animal> array;
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	CriarVarios();
+	Imprime();
+		//GerarAnimal();
+		//GerarAnimalq1();
+	
+	}
+
+
+
+
+
+public static void GerarAnimal() {
+		// TODO Auto-generated method stub
+		Random gerador = new Random();
+		int aleatorio = gerador.nextInt(7)+1;
+		{
+	     
+	switch (aleatorio){
+	    case 1 :
+	    	System.out.println("O animal criado é um mamifero \n");
+	    	 Mamifero novo_mamifero = new Mamifero();
+		break;        
+	    case 2:
+	    	System.out.println ("O animal gerado é um Peixe \n");
+	    	Peixes novo_peixe = new Peixes();
+	    break;
+	    case 3:
+	    	System.out.println ("O animal gerado é uma ave \n");
+	    	Aves novo_ave = new Aves();
+	     	break; 
+	    case 4 :
+	    	System.out.println("O animal criado é uma arara \n");
+	    	 Ararra nova_ararar   = new Ararra();
+		break;
+	    case 5 :
+	    	System.out.println("O animal criado é um cachorro \n");
+	    	Cachorro novo_cao = new Cachorro();
+		break;
+	    case 6 :
+	    	System.out.println("O animal criado é um tubarao \n");
+	    	 Tubarao novo_tubarao = new Tubarao();
+		break;
+	    case 7 :
+	    	System.out.println("O animal criado é um cachorro Pastor  \n");
+	    	 Pastor novo_pastor = new Pastor();
+		break;
+	     }
+	     }
+	} 
+
+public static List<Animal> CriarVarios(){
+	//int i = 0;
+	//while (i<10)
+	//{
+		
+	
+	List<Animal> lista = new ArrayList<Animal>();
+	for(int j=0;j<10;j++){
+	GerarAnimal();
+	}
+	return lista;
+	}
+	//return array;
+
+//}
+public static void Imprime(){
+	for (int i = 10; i < array.size(); i++) {  
+        System.out.println(array.get(i));  
+
+    }
+}
+
+public static void GerarAnimalq1() {
+		{
+	   	System.out.println("O animal criado é um mamifero \n");
+    	Mamifero novo_mamifero = new Mamifero();
+	   	System.out.println ("O animal gerado é um Peixe \n");
+    	Peixes novo_peixe = new Peixes();
+       	System.out.println ("O animal gerado é uma ave \n");
+    	Aves novo_ave = new Aves();
+     	}
+}
+     
+          
+	
+}

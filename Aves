@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Cachorro extends Mamifero {
+	 int tamanho;
+	 
+
+	public int getTamanho() {
+		return tamanho;
+	}
+	public Cachorro() {
+		super();
+	System.out.printf ("Digite o tamanho do cachorro");
+	 ler = new Scanner(System.in);
+		this.som = " AU AU AU  ";
+	 this.tamanho = ler.nextInt();
+
+		
+	}
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+	 
+}
